@@ -1,0 +1,64 @@
+@media (max-width: 1199px) {
+  .control {
+    span.select {
+      select {
+        color: $primary-blue;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.carousel-list {
+  &.has-shadow {
+    box-shadow: unset !important;
+  }
+}
+
+.b-tabs {
+  .tabs {
+    ul {
+      li {
+        background: black;
+        color: #b5a4c8;
+        border-color: #faf6fb #faf6fb #fff;
+        a {
+          padding: 1rem 1rem;
+          // color: #fede67;
+          color: white;
+        }
+        a:hover {
+          background-color: unset;
+        }
+        &.is-active {
+          a {
+            color: black;
+            padding: 1rem 1rem;
+            border-color: #3b4473 #faf6fb #fff;
+
+            // border-color: #ce75b4 #faf6fb #fff;
+            // border-bottom-color: unset;
+            border-width: 2px;
+          }
+          a:hover {
+            background-color: white !important;
+          }
+        }
+      }
+    }
+    // margin-bottom: 10px !important;
+  }
+}
+
+$colors: (
+  "custom-green": (
+    $primary-green,
+    white
+  ),
+  "custom-navy": (
+    $primary-navy,
+    white
+  )
+);
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
